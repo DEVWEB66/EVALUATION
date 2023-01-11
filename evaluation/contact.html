@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="contact">
+    <nav>
+        <div>
+          <a href="index.html" class="logo">Mon curriculum vitae 
+        </a>
+        </div>
+        <div>
+          <ul id="nav">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+    <!-- Le menu hamburger  -->
+        <div class="menu" id="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+<!-- Le FORMULAIRE  -->
+<div class="cont">
+<div class="formulaire">
+
+<section id="contact">
+    <form action="./contact.php" method="post" name="contact_form">
+        <h1>Contact </h1>
+        <p>Les champs marqués d'un <span>*</span> sont obligatoires</p>
+
+<!--civilité-->      
+       
+    <div class="form">
+            <H2>  Civilités  </H2>
+
+    <div class="groupe">
+        <ul>
+        <li>
+        <label for="nom"> Nom <span>*</span></label> 
+        <input id="nom" required="required" type="text" name="nom" placeholder="" value="">
+    </li>
+    <li>
+        <label for="prenom"> Prénom </label>
+        <input id="prenom" required="required" type="text" name="prenom" placeholder="" value="">
+    </li>
+    </ul>
+    </div>
+    </div>
+
+<!--Votre entreprise-->
+    <div class="form">
+        <div class="groupe">
+            <h2> Votre entreprise : </h2>
+        <ul>
+            <li>
+                <label for="adresse">Raison sociale de votre entreprise <span>*</span></label>
+                <input id="raison" name="raison"  required placeholder="" required="required">
+              </li>
+          <li>
+            <label for="adresse">Adresse postale</label>
+            <input id="adresse" name="adresse"  required placeholder="" required="required">
+          </li>
+
+          <li>
+            <label for="codepostal">Code postal</label>
+            <input id="codepostal" name="codepostal" type=text required placeholder="">
+          </li>
+
+          <li>
+            <label for="ville">Ville</label>
+            <input id="ville" name="ville" type=text required placeholder="">
+          </li>
+          
+          <li>
+            <label for="email">E-mail <span>*</span></label>
+            <input type="email" id="email" name="email" value="" placeholder="" required="required">
+          </li>
+          </ul>
+
+          <div class="btn">
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Effacer ">
+           </div>
+
+          </div>
+          
+          
+</section>
+<!-- FIN DU FORMULAIRE  -->
+
+
+<!-- LA PARTIE A DROITE  -->
+<div class="verticale"></div>
+
+<div class="container">
+    <div class="liens">
+        <h3>Liens</h3>
+        <a href=""> Github</a>
+        <a href=""> Linkedin</a>
+        <a href=""> Instragram</a>
+        <a href=""> Facebook</a>
+    </div>
+    <div class="liens">
+        <h3>Catégories</h3>
+        <a href=""> HTML/CSS</a>
+        <a href=""> Javascript</a>
+        <a href=""> PHP</a>
+        <a href=""> MySQL</a>
+    </div>
+</div>
+</div>
+   
+<footer>
+    <div class="media">
+      <p>©️2023 PHPO Production.</p>
+    </div>
+</footer>
+</div>
+</div>
+</body>
+</html>
